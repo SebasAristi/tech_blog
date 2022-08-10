@@ -1,0 +1,12 @@
+
+
+<a href="/dashboard/new"><button>New Post</button></a>
+
+{{#each posts}}
+<div>
+    <h2><a href="/dashboard/edit/{{id}}">{{title}}</a></h2>
+
+    <p>Posted on {{format_date createdAt}}</p>
+</div>
+
+{{/each}}
